@@ -1,0 +1,83 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.ir_input {
+    @apply flex-1 w-full p-3 border-gray-200 rounded-md bg-gray-50;
+}
+
+.ir_button {
+    @apply px-4 py-2 font-semibold text-gray-800 bg-white border border-gray-200 rounded-md cursor-pointer hover:text-white hover:bg-primary;
+}
+
+.ir_input.attached{
+    @apply rounded-r-none;
+}
+.ir_input.warning{
+    @apply border border-primary;
+}
+
+
+.ir_button.attached{
+    @apply px-4 py-2 font-semibold text-gray-800 border border-l-0 border-gray-200 rounded-md rounded-l-none hover:text-white hover:bg-primary;
+}
+strong {
+    @apply font-semibold;
+}
+.content {
+    @apply mx-auto leading-relaxed tracking-wide;
+}
+.content ul{
+    @apply ml-10 list-disc my-2;
+}
+.content ol{
+    @apply ml-10 list-decimal my-2;
+}
+.content li{
+    @apply mb-2;
+}
+.content blockquote {
+    @apply p-4 mb-4 text-gray-500 bg-gray-100 border-b-8 border-gray-400;
+}
+.content img{
+    max-width: 100%;
+}
+.content a {
+    @apply text-primary;
+}
+.content h1, h2, h3, h4 {
+    @apply font-semibold
+}
+
+.content h2{
+    @apply text-3xl my-2
+}
+
+.content h3{
+    @apply text-2xl my-2
+}
+
+.content pre {
+    overflow-x:scroll;
+}
+.content code{
+    overflow-x:scroll;
+}
+
+.content p {
+    @apply py-2;
+}
+.content.has-columns{
+    column-width: 22em;
+    column-count:2;
+    column-rule: 1px dotted #ddd;
+  }
+
+/* @layer utilities {
+    @variants responsive {
+        .columns{
+            max-width: 150ch;
+            column-width: 65ch;
+        }
+    }
+  } */
